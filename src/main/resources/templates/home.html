@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corporis
+      atque illum illo nihil architecto sequi voluptas saepe, adipisci quia
+      magni ducimus voluptatibus quo quae ut nesciunt doloremque similique
+      libero?
+    </p>
+    <div>
+      <img width="50%" height="50%" src="https://placehold.co/600x400" />
+    </div>
+    <div>
+      <span data-th-text="${currTime}"></span>
+    </div>
+    <div th:if="${currHour le 12}"><h3>Morning</h3></div>
+    <div data-th-unless="${currHour gt 12}"><h3>Good Afternoon</h3></div>
+  </body>
+</html>
